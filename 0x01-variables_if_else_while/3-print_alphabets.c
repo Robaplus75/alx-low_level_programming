@@ -8,18 +8,18 @@
  */
 int main(void)
 {
-	int ch = 'a';
-	int CH = 'A';
+	int lower = 'a';
+	int upper = 'A';
 
-	while (ch <= 'z')
+	while (lower <= 'z')
 	{
-		putchar(ch);
-		ch++;
+		putchar(lower);
+		lower++;
 	}
-	while (CH <= 'Z')
+	while (upper <= 'Z')
 	{
-		putchar(CH);
-		CH++;
+		putchar(upper);
+		upper++;
 	}
 
 	putchar('\n');

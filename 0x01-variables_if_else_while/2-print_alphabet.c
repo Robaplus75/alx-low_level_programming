@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	for (int i = 'A'; i <= 'Z'; i++)
+	for (int i = 'a'; i <= 'z'; i++)
 	{
-		putchar(tolower(i));
+		putchar(i);
 	}
 	return (0);
 }

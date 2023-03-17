@@ -4,7 +4,7 @@
 /**
  * main - generate random , classifly +ve or -ve or 0
  *
- * Return - returns 0
+ * Return - Always 0 (Success)
  */
 
 /* betty style doc for function main goes there */

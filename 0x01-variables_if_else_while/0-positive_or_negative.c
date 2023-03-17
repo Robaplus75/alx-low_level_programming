@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
- * main - main file that generates random number and prints if its positve or not
+ * main - generate random , classifly +ve or -ve or 0
  *
  * Return - returns 0
  */
@@ -19,11 +20,11 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		printf("%d is zero\n",n);
+		printf("%d is zero\n", n);
 	}
 	else if (n < 0)
 	{
 		printf("%d is negative\n", n);
 	}
 	return (0);
-
+}

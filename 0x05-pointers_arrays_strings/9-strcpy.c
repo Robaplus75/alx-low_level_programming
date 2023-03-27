@@ -3,7 +3,7 @@
 
 /**
  * _strcpy - copies string
- * @dest: input 
+ * @dest: input
  * @src: input
  * Return: the charachter
  */

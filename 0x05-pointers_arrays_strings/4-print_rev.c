@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_rev - reverser
@@ -16,8 +17,8 @@ void print_rev(char *s)
 	}
 	while (i != -1)
 	{
-		putchar(s[i]);
+		_putchar(s[i]);
 		i--;
 	}
-	putchar('\n');
+	_putchar('\n');
 }

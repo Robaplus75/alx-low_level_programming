@@ -13,15 +13,17 @@ char *_strchr(char *s, char c)
 	int i = 0;
 	int k = 0;
 	char word[100];
+
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
 		{
 			int j = 0;
+
 			k++;
 			while (s[i] != '\0')
 			{
-				*(word+j) = s[i];
+				*(word + j) = s[i];
 				j++;
 			}
 			break;

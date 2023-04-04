@@ -7,21 +7,21 @@
  *
  * Return:  the located character and z rest
  */
-
+		
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+        int k = 0;
 
-	for (int k = 0; s[k] != '\0' && s[k] != c; k++)
+        while (s[k] != '\0' && s[k] != c)
 	{
-		i++;
+                k++;
 	}
-	if (s[i] == c)
+        if (s[k] == c)
 	{
-		return (&s[i]);
+                return (&s[k]);
 	}
-	else
+        else
 	{
-		return (NULL);
+                return (NULL);
 	}
 }

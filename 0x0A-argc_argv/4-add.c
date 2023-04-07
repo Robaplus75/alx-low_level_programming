@@ -1,15 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 /**
- * main - main funct
- * @argc: param count
- * @argv: param poiter
- * Return: int
+ * main - adds postive numbers
+ * @argc: number of arguments
+ * @argv: argument
+ * Return: one or zero
  */
+
 int main(int argc, char *argv[])
 {
-	int i, j, sum = 0;
+	int i;
+	int j;
+	int add = 0;
 
 	for (i = 1; i < argc; i++)
 	{
@@ -21,9 +25,9 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		sum += atoi(argv[i]);
+		add += atoi(argv[i]);
 	}
-	printf("%d\n", sum);
+	printf("%d\n", add);
 
 	return (0);
 }

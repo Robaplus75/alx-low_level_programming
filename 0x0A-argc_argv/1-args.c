@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
- * Return: Always 0 (Success)
+ * main - tells the number of arguments
+ * @argc: number of arguments
+ * @argv: arguments
+ * Return: zero
  */
 int main(int argc, char **argv)
 {
-	(void) argv; /*Ignore argv*/
+	(void) argv;
 	printf("%i\n", argc - 1);
 
 	return (0);

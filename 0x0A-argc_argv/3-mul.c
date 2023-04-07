@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - prints the multiplication of two integers
- * @argc: argument count
- * @argv: argument vector
- * Return: 0 if it works, 1 if there is an ERROR
+ * main - multiplies two numbers
+ * @argc: number of arguments
+ * @argv: arguments
+ * Return: zero or one
  */
 int main(int argc, char **argv)
 {
-	int n, m, diff;
+	int product;
 
 	if (argc != 3)
 	{
@@ -17,11 +17,9 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	n = atoi(argv[1]);
-	m = atoi(argv[2]);
-	diff = n * m;
+	product = atoi(argv[1]) * atoi(argv[2]);
 
-	printf("%i\n", diff);
+	printf("%i\n", product);
 
 	return (0);
 }

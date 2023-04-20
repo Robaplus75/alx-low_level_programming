@@ -40,10 +40,9 @@ void print_all(const char * const format, ...)
 			printf("%s", str);
 			break;
 		}
-		if (i + 1 != k)
-		{
+		if (format[i + 1] == 'c' || format[i + 1] == 'i'
+		|| format[i + 1] == 'f' || format[i + 1] == 's')
 			printf(", ");
-		}
 		i++;
 	}
 	va_end(list);

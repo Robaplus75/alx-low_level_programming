@@ -9,9 +9,13 @@
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	int i = 0;
+	int i = 0, k = 0;
 	char *str;
 
+	while (format[k] != '\0')
+	{
+		k++;
+	}
 	va_start(list, format);
 	while (format[i] != '\0')
 	{
@@ -36,7 +40,7 @@ void print_all(const char * const format, ...)
 			printf("%s", str);
 			break;
 		}
-		if (format[i + 1] != '\0')
+		if (i + 1 != k)
 		{
 			printf(", ");
 		}

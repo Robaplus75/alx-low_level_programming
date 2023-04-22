@@ -23,15 +23,15 @@ void print_all(const char * const format, ...)
 		{
 		case 'c':
 			printf("%c", va_arg(list, int));
-			n += 1;
+            n+=1;
 			break;
 		case 'i':
 			printf("%d", va_arg(list, int));
-			n += 1;
+            n+=1;
 			break;
 		case 'f':
 			printf("%f", va_arg(list, double));
-			n += 1;
+            n+=1;
 			break;
 		case 's':
 			str = va_arg(list, char *);
@@ -41,15 +41,20 @@ void print_all(const char * const format, ...)
 				break;
 			}
 			printf("%s", str);
-			n += 1;
+            n+=1;
 			break;
 		}
 		if ((format[i + 1] == 'c' || format[i + 1] == 'i'
 		|| format[i + 1] == 'f' || format[i + 1] == 's')
-		&& n > 0)
+        && n>0)
 			printf(", ");
 		i++;
 	}
 	va_end(list);
 	printf("\n");
+}
+
+int main(){
+    print_all("mnbvfqcepolsbxzi",3.144,'H',"robaplus",0);
+    return 0;
 }

@@ -24,7 +24,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	li->next = NULL;
 	buff = *head;
 
-	if (temp == NULL)
+	if (buff == NULL)
 		*head = li;
 
 	else

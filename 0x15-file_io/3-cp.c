@@ -53,15 +53,15 @@ int main(int argc, char *argv[])
 			error_file(0, -1, argv);
 	}
 
-	err_close = close(from);
-	if (err_close == -1)
+	close = close(from);
+	if (close == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from);
 		exit(100);
 	}
 
-	err_close = close(to);
-	if (err_close == -1)
+	close = close(to);
+	if (close == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from);
 		exit(100);

@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 	}
 
 	Eclose = close(from);
-	if (close == -1)
+	if (Eclose == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from);
 		exit(100);

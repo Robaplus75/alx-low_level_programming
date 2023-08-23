@@ -1,0 +1,10 @@
+m = "message"
+
+all:
+	@echo "adding to stage"
+	git add .
+	@echo "Commiting project"
+	git commit -m $(m)
+	@echo "Pushing commit"
+	git push
+	@echo "----Push Complete---"

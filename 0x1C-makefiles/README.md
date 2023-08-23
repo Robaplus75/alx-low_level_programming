@@ -1,1 +1,1 @@
-alx makefile projects
+alx makefile project
